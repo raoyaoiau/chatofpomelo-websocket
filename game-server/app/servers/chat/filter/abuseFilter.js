@@ -10,6 +10,12 @@ Filter.prototype.before = function (msg, session, next) {
     session.__abuse__ = true;
     msg.content = msg.content.replace('fuck', '****');
   }
+
+  if (msg.content.indexOf('xiaxu') !== -1) {
+    session.__abuse__ = true;
+    msg.content = msg.content.replace('xiaxu', '夏旭');
+  }
+  
   
   next();
 };

@@ -161,7 +161,7 @@ function queryEntry(uid, callback) {
 	var route = 'gate.gateHandler.queryEntry';
 	pomelo.init({
 		host: window.location.hostname,
-		port: 3014,
+		port: 1014,
 		log: true
 	}, function() {
 		pomelo.request(route, {
